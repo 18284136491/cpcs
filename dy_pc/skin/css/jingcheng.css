@@ -1,0 +1,1589 @@
+﻿.border{
+	border:red solid 1px;
+}
+#page-header-first,#page-header{
+	float:left;
+	width:1004px;
+	background: url(../headerBg.jpg) left top no-repeat;
+}
+#page-container{
+	width:1004px;
+}
+#page-container-sports{
+    width:1004px;
+}
+#header01,#header{
+	margin:0 auto;
+	width:1004px;
+	float:left;
+	background:url(../BG_header.jpg) no-repeat scroll center top #CE8908;
+	height:146px;
+}
+#page-body{
+	width:1004px;
+	float:left;
+	padding:0px 0px 20px 0px;
+}
+.subIMGDIV{
+	background:url(../title_lottery.jpg) center top no-repeat;
+	height:120px;
+	width:1004px;
+	}
+.subIMGDIV.JoinMember{
+	background:url(../title_welcome.jpg) center top no-repeat;
+	}
+	.subIMGDIV.AT1{
+	background:url(../title_welcome.jpg) center top no-repeat;
+	}
+#subIMG{
+	height:122px;
+	background:url(../BG_subIMG.jpg) no-repeat scroll center center transparent;
+	margin-bottom:15px;
+	}
+/*登入表單*/
+#A-Menual{
+	float:left;
+	width:730px;
+	height:99px;
+	font-size:12px;
+	color: #FFF;
+}
+#Addhomepage{
+	float:left;
+	margin:2px 0px 0px 25px;
+	_margin:2px 0px 0px 15px;
+}
+select {
+-webkit-appearance: menulist;
+box-sizing: border-box;
+-webkit-box-align: center;
+border: 1px #000000 solid;
+border-image: initial;
+white-space: pre;
+-webkit-rtl-ordering: logical;
+color:#FFFFFF;
+background-color:#000000;
+cursor: default;
+}
+#mem-login{
+	float:right;
+	margin-right:0px;
+	margin-top:60px;
+	height:29px;
+	line-height:35px;
+}
+#mem-login label{
+	text-align:left;
+
+}
+#mem-login .nav_lab{
+		border:1px solid #FFCC00;
+		background-color:#330000;
+	float:left;
+margin-right:5px;
+padding-left:3px;
+}
+#mem-login .check_pic{
+	float:left;
+		border:1px solid #FFCC00;
+		background-color:#330000;
+margin-right:5px;
+width:120px;
+}
+.za_text{
+	border:0px;
+	width:80px;
+	height:15px;
+	line-height:15px;
+	font:normal 12px  Verdana;
+	color:#999999;
+	background-color:transparent;
+}
+.za_text2{
+	border:0px;
+	width:40px;
+	height:15px;
+	line-height:15px;
+	font:normal 12px  Verdana;
+	color:#999999;
+	background-color:transparent;
+}
+#in-login {
+	width:780px;
+	_width: 770px;
+	height: 30px;
+	line-height:30px;
+	color: #FFF;
+	float:right;
+	text-align: right;
+}
+#in-login ul li{
+	float:left;
+	margin-right: 10px
+}
+#in-login ul li H3{
+	margin-right: 15px
+}
+#in-login div{float:left;margin-right: 10px;}
+/*登入表單_END*/
+/*主選單*/
+#main-Menual{
+    float: right;
+	width: 699px;
+	height: 36px;
+	line-height:36px;
+	margin:0px;
+}
+#header01 ul.topNav li{
+    float:left;	
+    text-align: center;
+}
+#header01 ul.topNav span{
+    float:left;	
+    width:74px;
+    text-align: center;
+	float:right;
+	margin-top:18px;
+	margin-right:5px;
+}
+#main-Menual ul li a{
+	display: block;
+	color: #FFE611;
+	font-weight: normal;
+	text-decoration: none;
+	width:68px;
+	background: url(../BG_topNav_a.jpg) no-repeat scroll left top transparent;
+}
+#main-Menual ul li a#textGlitter1.current{
+	width:57px;
+	padding-left:30px;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	background: url(../BG_topNav_a_first.png) no-repeat scroll left bottom transparent;
+}
+#main-Menual ul li a#textGlitter1:hover{
+	background: url(../BG_topNav_a_first.png) no-repeat scroll left top transparent;
+	
+}
+#main-Menual ul li a:hover ,#main-Menual ul li a.current{
+	color: #000000;
+	background-position:left bottom;
+	background: url(../BG_topNav_a.jpg) no-repeat scroll left bottom transparent;
+}
+#L-Sub{
+    position: relative;
+    z-index: 9999;
+    clear: both;
+}
+#L-Sub div {
+    display:none;
+    position: absolute;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    z-index:100;
+}
+#L-Sub div a {
+    float: left;
+    display: block;
+    background: url(../deep_purple.gif) 32px repeat-x;
+    padding: 0 4px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+#L-Sub span {
+    display: block;
+    float: left;
+    width: 7px;
+    height: 32px;
+}
+#L-Sub span.subbg-left {
+    background: url(../deep_purple.gif) left top no-repeat;
+}
+#L-Sub span.subbg-right {
+    background: url(../deep_purple.gif) left bottom no-repeat;
+}
+#page-left-ball{
+	float:left;
+	width:220px;
+}
+#page-left {
+    float:left;
+    width:265px;
+}
+#page-content-fight{
+	width:657px; 
+	margin:0px auto;
+	overflow:auto;
+}
+#page-headline{
+    background:url(../bgtitle.jpg) right top repeat-x ;
+    height:27px;
+    margin-bottom:12px;
+    padding-left:50px;
+}
+#page-fight{
+    margin:10px 5px 10px 5px;
+}
+.block{
+    display:block;
+}
+.clear{
+    clear:both;
+}
+.login-Menual{
+    height:20px;
+}
+#Main_news {
+    background: url(../BG_news.jpg) top left no-repeat;
+    width: 1004px;
+    height: 28px;
+}
+marquee{
+    padding:0 10px 0 10px;
+    text-align:left;
+}
+#SU-Menual{
+     height:20px;
+	padding:5px 10px 5px 0;
+	clear:both;
+	background: #000000;
+}
+/*登入後副選單*/
+#SU-Menual ul{
+	float:left;
+}
+#SU-Menual ul li{
+    color:#FFFFFF;
+    font-size:12px;
+    margin-left:1px;
+    float:left;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    line-height:20px;
+    cursor:pointer;
+    text-align:center;
+    display:inline-block;
+}
+#SU-Menual li a {
+	color: #FFFFFF;
+}
+#SU-Menual li a:hover {
+	color:#FFCCCC;
+}
+/*登入後副選單_END*/
+.header-bottom{
+	float:left;
+	margin:0 auto;
+	height:30px;
+	line-height:30px;
+	width:970px;
+	background:#550700;
+	padding-right: 30px;
+}
+.header-bottom a{
+	padding: 0px 5px 0px 5px;
+}
+#btnContact{
+	width:225px;
+	margin:1px auto;
+	height:78px;
+	background: url(../btnContact.jpg) no-repeat;
+}
+#btnjoin{
+	margin:0 auto;
+	width:225px;
+	height:74px;
+	background: url(../btnjoinus.jpg) top no-repeat;
+}
+#btnjoin:hover{
+	margin:0 auto;
+	width:225px;
+	height:78px;
+	background: url(../btnjoinus.jpg) bottom no-repeat;
+}
+#btnmembet{
+	margin:0 auto;
+	width:225px;
+	height:74px;
+	background: url(../jpeg.jpg) no-repeat;
+}
+
+
+#btnHeader{
+	float:left;
+	width:235px;
+	height:154px;
+	background: url(../bgright.jpg) no-repeat;
+}
+#btnHeader a{
+	float:left;
+}
+#headerimg{
+	float:left;
+	width:737;
+	height:111; 
+	background: url(../pic01.jpg) no-repeat;
+}
+#fight_content{
+	position:relative;
+	left:35px;
+	float:left;
+	width:921px;
+	height:118px;
+	margin-bottom:10px;
+	background:url(../bg01.jpg) top left no-repeat;
+	background-image: url(../bg.jpg);
+}
+#fight_flash{
+	position:relative;
+	float:left;
+	top:1px;
+	left:1px;
+	width:440px;
+	height:116px;
+}
+
+#fight_btnArea{
+	position:relative;
+	float:left;
+	top:16px;
+	left:130px;
+	width:208px;
+}
+a.fight_btn{
+	display:block;
+	width:206px;
+    height:30px;
+	background:url(../btn.png) top  left no-repeat;
+	text-align:center;
+	font-family:"新細明體";
+	font-size:14px;
+	color:#FFFFFF;
+	padding-top:11px;
+	margin-bottom:7px;
+	cursor: pointer;
+	text-decoration: none;
+}	
+a.fight_btn:hover{
+	color:#FFFB80;
+}
+/*First-中間*/
+#ad-flash{
+    float:left;
+    width:784px;
+    height:332px;
+}
+#first-right {
+	float:left;
+	position:relative;
+	width:220px;
+	height:332px;
+	padding:0px;
+}
+#first-bottom {
+     width: 1004px;
+}
+#first-bottom a{
+	float: left;
+	height: 100px;
+}
+/*打燈圖*/
+#first_content{
+	width:1004px;
+	height:180px;
+	margin: 0px auto;
+	padding-left: 22px;
+	background:url(../BG_FirstGamePic.jpg) top left no-repeat;
+}
+#first_content a{
+	float: left;
+	display:inline-block;
+	text-align: center;
+	text-decoration:none;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+#first_content a:hover{
+	color:#FFCC00;
+}
+#first_content .game01{
+	width: 160px;
+	height: 180px;
+	padding:0;
+	background:url(../135270527795.jpg) top left no-repeat;
+}
+#first_content .game02{
+	width: 160px;
+	height: 180px;
+	padding:0;
+	background:url(../135270534506.jpg) top left no-repeat;
+}
+#first_content .game03{
+	width: 160px;
+	height: 180px;
+	padding:0;
+	background:url(../135270547202.jpg) top left no-repeat;
+}
+#first_content .game04{
+	width: 160px;
+	height: 180px;
+	padding:0;
+	background:url(../135270554135.jpg) top left no-repeat;
+}
+#first_content .game05{
+	width: 160px;
+	height: 180px;
+	padding:0;
+	background:url(../135270559621.jpg) top left no-repeat;
+}
+#first_content .game06{
+	width: 160px;
+	height: 180px;
+	padding:0;
+	background:url(../135270567451.jpg) top left no-repeat;
+}
+/*First-中間_END*/
+/*footer*/
+#page-footer{
+    width:1004px;
+    height:100px;
+    color: #ffffff;
+    text-align: left;
+    background:url(../BG_footer.jpg) no-repeat scroll center bottom transparent;  
+}
+#bbin_pic{
+	float:right;
+	/*margin-top:15px;*/
+	margin-right:30px;
+	width:450px;
+	}
+#footer-advertis{ padding-bottom:5px;float:right;} 
+#proposal, #contact-info { padding:0;text-align:right;clear:both; }
+#footer-advertis a {
+	color: #ffffff;
+	padding:0 5px;
+	text-decoration: none;
+}
+#footer-advertis a:hover {
+	color: #FFCCCC;
+}
+a.w04:link,a.w04:visited,a.w04:active{
+    font-size:12px;
+    color:#999999;
+    text-decoration:none;
+}
+a.w04:hover {
+    color:#FFCC00; 
+    text-decoration:none;
+}
+#adv-bg {
+　　clear:both;
+    float:left;
+	margin:0 auto;
+	width:1004px;
+	height:20px;
+	padding-top:6px;
+	background:#000000;
+}
+.copy01{
+	padding-left:37px;
+	padding-right:10px;
+	padding-top:2px;
+    width:955px;
+    height:44px;
+    background:url(../nav03bg.gif) #000 repeat-x;
+}
+.copy2{
+	padding-left:37px;
+	padding-right:10px;
+    width:955px;
+    height:30px;
+}
+.copy02{
+	position:relative;
+	left:30px;
+    width:976px;
+    height:20px;
+}
+a.string05:link,
+a.string05:active,
+a.string05:visited{
+    color:#FFFFFF;
+    text-decoration:none;
+    margin-left:8px;
+	line-height:25px;
+}
+a.string05:hover{
+    color:#FFCC00;
+    text-decoration:none;
+}
+/*文案*/
+#direction{
+    float: left;
+    margin-left: 10px;
+    width: 700px;
+    color:#FFF;
+}
+#articles,
+#Union{
+	margin:0 10px ;
+}
+#direction h3{
+    font-size:14px;
+    line-height:25px;
+}
+#direction dl,#direction ul{
+    margin:20px 0 20px 0;
+}
+#direction ul.inner{
+    margin:0px;
+    list-style-type:disc;
+    list-style-position:outside;
+}
+#direction ul.inner li{
+    margin-left:20px;
+    line-height:22px;
+}
+#direction ul.in{
+    list-style-type:decimal;
+    list-style-position:outside;
+}
+#direction dd{
+    text-indent:20px;
+    line-height:22px;
+}
+#direction ul.in li{
+    margin-left:20px;
+    line-height:22px;
+}
+#direction dt,p{
+    line-height:25px;
+}
+#direction ul.mtab-menual{
+    list-style:none;
+}
+#direction ul.mtab-menual li{
+    border-right:2px solid #FFF;
+    margin-left:5px;
+    display:inline;
+    cursor:pointer;
+    padding:2px 2px 2px 2px;
+    font-size:12px;
+    font-weight: bold;
+    color:#FFF;
+}
+#direction ul.mtab-menual li:hover {
+	color:#FFCCCC;
+}
+#direction .tt{
+    text-indent:1em;
+}
+#direction .tt1{
+    text-indent:1em;
+    color:#FFFFFF;
+}
+#direction .ag_service{
+	text-align:center;
+	padding:15px 0;
+	color:#000000;
+}
+/*字顏色*/
+#direction .blue{
+    color:#593B00;
+}
+#direction .red{
+    color:#FF0000;
+}
+#direction .white{
+    color:#FFFFFF;
+}
+#direction .bold{
+    font-weight:bold;
+}
+
+#direction a:link,
+#direction a:active,
+#direction a:visited{
+    color:#FF0000;
+    text-decoration:none;
+}
+#direction a:hover{
+    color:#FFCCCC;
+    text-decoration:none;
+}
+#head-pic{
+   float:left;
+   width:1004px; 
+   height:116px;
+   background-color: #000000;
+}
+#in-left{
+	float:left;
+     width:732px;
+	height:116px;
+}
+#in-right{
+	float:right;
+     width:228px; 
+	height:116px;
+	background:url(../unContact02.jpg) top no-repeat;
+}
+/*footer_END*/
+/*樂透*/
+.lottery_bg{
+	width:450px;
+	height:116px;
+	background:url(../bggame02.jpg) top left no-repeat;
+	position:relative;
+	float:left;
+	padding-right:50px;
+	left:30px;
+	margin-top:20px;
+	text-align:left;
+}
+.lottery_gameimg{
+	position:absolute;
+	float:left;
+	left:280px;
+	top:0px;
+	width:170px;
+	height:108px;
+}
+.lottery_gameimg img {
+	position:relative;
+	top:3px;
+	left:-78px;
+}
+.lottery_gameimg h1{
+	position:relative;
+	top:-92px;
+	left:-265px;
+	padding-left:15px;
+	color:#FFFFFF;
+	background: url(../icon02.gif) 0px 2px no-repeat;
+}
+.lottery_gameimg .text-area{
+	position:relative; 
+	float:left; 
+	top:-92px; 
+	left:-250px; 
+	color:#FFFFFF; 
+	padding-top:3px;
+	line-height:16px;
+}
+.yellow01{ font-family:Verdana; color: #FF0; font-size:11px;}
+.yellow02{ font-family: Arial; color: #FC0; font-size:11px;}
+.boxcaption_lottery{
+	float: left;
+	position: relative;
+	background: #333333;
+	height: 45px;
+	width: 399px;
+	margin-top:-32px;
+	margin-left:-31px;
+	padding:3px 0px 5px 31px ;
+	opacity: .75;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";left: 1px;
+}
+.captionfull .boxcaption {
+	float:left;
+	top: 115px;
+	left: -4px;
+}
+/*首頁內容*/
+#first-promotion {
+	float: left;
+	background: url(../SPbg.jpg) no-repeat;
+	width: 328px;
+}
+#first-promotion a {
+	background: url(../SPbg.jpg) no-repeat;
+}
+#flash_left{
+	float:left;
+}
+.first-prize{
+	width:230px;
+	height:83px;
+	background:url(../SPbg.jpg) no-repeat;
+	margin-top:20px;
+}
+.first_btn{
+	float:right;
+	width:255px;
+	height: auto;
+}
+.first_news{
+	float:right;
+	color:#FFFFFF;
+	margin:10px 50px 0px 50px;
+}
+.contactUs{
+	cursor: pointer;
+	width:225px;
+	height:78px;
+	margin-left:15px;
+	margin-top:5px;
+	background:url(../btnContact.jpg) top no-repeat ;
+}
+.contactUs1{
+	height:78px;
+	background:url(../btnContact.jpg) top no-repeat ;
+}
+a.joinUs{
+	float:left;
+	width:225px;
+	height:78px;
+	margin-left:0px;
+	margin-top:0px;
+	background: url(../btnjoinus.jpg) top  no-repeat;
+}
+.joinUs1{
+	width:225px;
+	height:78px;
+	margin-left:15px;
+	margin-top:5px;
+	background: url(../btnjoinus.jpg) bottom no-repeat;
+}
+
+.joinUs2{
+	margin-left:15px;
+	margin-top:5px;
+	width:225px;
+	height:78px;
+	background: url(../jpeg.jpg) no-repeat;
+}
+.welcome{
+	float:left;
+	position:relative;
+	left:120px;
+	width:217px;
+	height:86px;
+	margin-top:10px;
+	background-position:right top;
+	background-repeat: no-repeat;	
+}
+/*end*/
+/*電子遊藝*/
+a.string06:link,
+a.string06:active,
+a.string06:visited{
+    color:#FFFFFF;
+    text-decoration:none;
+    padding:0px 0px 0px 10px;
+}
+a.string06:hover{
+    color:#FFCC00;
+    text-decoration:none;
+}
+/*遊戲介紹*/
+
+.content-area{
+	margin:0px auto;
+ 	width:1004px; 
+ 	_width:1019px; 
+ 	height: auto;
+}
+
+#Game-layout{
+	float:left;
+    width:312px;
+    height:116px;
+    margin:0px 4px 10px 4px;
+    _margin:0px 4px 4px 4px;
+    background:url(../bggame.jpg) top no-repeat;
+}
+#Game-layout .Game-Title{
+    position: relative;
+    line-height:25px;
+    padding:9px 0px 0px 30px;
+    color:#FFF;
+    text-align:left;
+    z-index: 999;
+    background: url(../icon02.gif) 15px 17px no-repeat;
+}
+
+#Game-Title{
+    background:url(../menu_header_casino.jpg) no-repeat;
+    height:30px;
+    color:#F5E132;
+    font-size:12px;
+    text-align:right;
+    padding-right:5px;
+    line-height:30px;
+}
+
+
+#Game-Menual{
+    width:225px;
+	background:url(../BG_GameMenual.jpg) repeat-x scroll left top transparent;
+	margin-left:20px;
+}
+#mem-info p{
+    color:#FFFFFF;
+    text-indent:1.2em;
+}
+.check-Account{
+    text-indent:1.2em;
+    color:#FFCC01;
+    line-height:20px;
+    border-bottom:1px solid #DAC7A2;
+}
+#Game-Menual H3{
+
+}
+.select-box,
+.select-box:active,
+.select-box:visited{
+	background:url(../BG_GameMenual_a.jpg) no-repeat scroll center bottom transparent;
+	display:block;
+	height:30px;
+	line-height:30px;
+	color:#FFFFFF;
+	text-align:center;
+	font-weight:normal;
+	text-decoration:none;
+}
+.select-box:hover{
+    color:#FFCC00;
+}
+#Game-Menual-ball li,
+#Game-Menual li{
+    height:24px;
+    line-height:24px;
+    text-indent:3em;
+    width:240px;
+    float:left;
+    border-bottom:#000 solid 1px;
+}
+#left-Menual {
+	background:url(../bgsub.gif) no-repeat;
+	width:240px;
+	height:37px;
+}
+#left-Menual li,
+#sport-Menual li{
+   float:left;
+   width:240px;
+   color:#ffffff;
+}
+#sport-Menual #\#Game-Menual-ball{
+    background:url(../quickMenu002.gif) no-repeat;
+    width:116px;
+    height:36px;
+    line-height:32px;
+    text-indent:3em;
+}
+#left-Menual #\#mem-menual{
+    width:120px;
+    height:37px;
+    line-height:37px;
+    text-indent:3em;
+}
+#left-Menual #\#mem-info{
+    width:120px;
+    height:37px;
+    line-height:37px;
+    text-indent:3em;
+}
+#left-Menual .mtab{
+    color:#FFF;
+    cursor:default;	
+}
+a.fast:link,
+a.fast:active,
+a.fast:visited{
+    display:block;
+    color:#000;
+    height:24px;
+    background:#E5ABF7;
+    text-decoration:none;
+}
+a.fast:hover{
+    color:#000;
+    background:url(../bgSub02_01.gif) 5% no-repeat #F0F0F0;
+}
+
+#Game-List-Menaul{
+    margin:0 auto;
+    width:265px;
+}
+
+
+Game-select-imgink,a.top:visited,a.top:active
+{
+    display:block;
+    font:12px/24px Verdana;
+    color: #ffffff;
+    background: url(../top.gif) no-repeat bottom;
+    text-decoration:none;
+	width:77px;
+	height:24px;
+	text-align:center;
+}
+a.top:hover{
+    color:#FFCC00;
+}/*真人娛樂*/
+.boxgrid span{
+	position:relative;
+	left:5px;
+	top:28px;
+	color:#FFFFFF;
+}
+.boxgrid{
+	display:block;
+	width:312px;
+	height:116px;
+	position:relative;
+	left:0px;
+	top:0px;
+	text-align:left;
+	overflow:hidden;
+	margin-top: -50px;
+}
+.boxgrid img{
+	position: absolute;
+	*top: 0px;
+	left: 82px;
+	_left:105px;
+	border: 0;
+	margin-top: 1px;
+	z-index: 1;
+}			
+.boxcaption{
+	color:#FFFFFF;
+}
+
+.boxgrid div.gray2{
+	position:relative;
+	top:32px;
+	padding-left:30px;
+	padding-bottom:2px;	
+	z-index: 1;
+}
+a.Game-select:link,
+a.Game-select:active,
+a.Game-select:visited{
+    color:#FFFFFF;
+    text-decoration:none;
+}
+a.Game-select:hover{
+    color:#FF99CC;
+    text-decoration:none;
+}
+a.select-menu-text:link,
+a.select-menu-text:active,
+a.select-menu-text:visited{
+    color:#CCCCCC;
+    text-decoration:none;	
+}
+a.select-menu-text:hover{
+    color:#FF99CC;
+    text-decoration:none;
+}
+.captionfull .boxcaption {
+	float:left;
+	top: 115px;
+	left: -4px;
+}
+/*電子遊藝*/
+.game_menu .mtab{
+	color: #FF99CC;
+}
+.game_menu {
+	font-size: 12px;
+	color:#CCC;
+	text-decoration: none;
+	width:936px;
+	margin:0px 0px 10px 25px;
+}
+.game_menu li{
+	float:left;
+	display:inline;
+}
+.casino_gameimg{
+	position:relative;
+	float:right;
+	top:-25px;
+	width:220px;
+	height:116px;
+	z-index: 1;
+}
+.Game-body{
+	margin-top:-25px;
+
+}
+.Game-body .text-area{
+	float:left;
+	position:relative;
+	left:30px;
+	top:5px;
+	z-index: 1;
+}
+.Game-body .text-area1{
+	position:relative; 
+	float:left; 
+ 	top:5px;
+	left:30px; 
+	word-spacing:1px;
+	z-index: 1;
+}
+.text-area .gray2,.text-area1 .gray2{
+	padding-bottom: 2px;
+	z-index: 1;
+}
+a.game-top{
+    color:#383838;
+	text-decoration:none;
+}
+a:hover.game-top{
+    color:#FFFF00;
+}
+/*登入後頁面*/
+#page-mem table.list thead th,
+#page-mem table.list th,
+#pate-mem p.mem{
+    color:#FFFFFF;
+	background:#060513;
+    text-align:center;
+	line-height:24px;
+	border:1px solid #666666;
+}
+#page-mem table.list td{
+	border:1px solid #666666;
+}
+#page-mem p.account{
+    line-height:20px;
+    background-color:#EAE3C9;
+    color:#0000FF;
+}
+#page-mem h3.mem{
+    font-size:16px;
+    border-bottom:1px solid #EEEEEE;
+}
+
+#page-mem .margin-bottom{
+    margin-bottom:10px;
+}
+#page-mem .left{
+    float:left;
+}
+#page-mem .right{
+    float:right;
+}
+#page-mem tr.dust{
+    background-color:#EEEEEE;
+}
+#page-mem a:link,
+#page-mem a:visited{
+    text-decoration:none;
+	color:#000000;
+}
+#page-mem a:hover{
+    color:#2F3C42;
+}
+#page-mem .success{
+    background-color:#005400;
+    color:#FFFFFF;
+}
+#page-mem .fail{
+    background-color:#FF0000;
+    color:#FFFFFF;
+}
+#page-mem p.bule{
+    font-size:12px;
+    color:#0000FF;
+}
+#page-mem p.red{
+    color:#FF0000;
+}
+#page-mem tbody{
+    font-size:12px;
+}
+#page-mem tbody td{
+    height:22px;
+}
+#page-mem .b_tab_ft {
+    padding-top: 3px;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+}
+#page-mem #G-Menu{
+    background-color:#EEEEEE;
+}
+/* located in demo.css and creates a little calendar icon
+* instead of a text link for "Choose date"
+*/
+#page-mem   a.dp-choose-date {
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 5px 3px 0;
+    display: block;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: url(../calendar.png) no-repeat;
+}
+#page-mem  a.dp-choose-date.dp-disabled {
+    background-position: 0 -20px;
+    cursor: default;
+}
+/* makes the input field shorter once the date picker code
+* has run (to allow space for the calendar icon
+*/
+#page-mem  input.dp-applied {
+    width: 140px;
+    float: left;
+}
+
+/*開獎結果頁*/
+#page-mem{
+   color:#000004;
+}
+#page-mem  .style01{
+    color:#D73600;
+    font-size:12px;
+}
+#page-mem .style02{
+    color:#0000FF;
+    font-size:12px;
+}
+#page-mem .round{
+    color:#0A2F5B;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .round_date{
+    color:#1F3916;
+    text-align:center;
+}
+#page-mem .round_result_2{
+    background:url(../RESULTB01.gif) no-repeat;
+    width:24px;
+    height:20px;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    color:#000000;
+    padding:1px;
+}
+#page-mem .round_result_1{
+    background:url(../RESULTB02.gif) no-repeat;
+    width:24px;
+    height:20px;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    padding:1px;
+    color:#000000;
+}
+#3dGameResult{
+    font-size:12px;
+}
+#3dGameResult td{
+    height:22px;
+    letter-spacing:1px;
+}
+#page-mem .ColorB1{
+    color:#DF76A7;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB2{
+    color:#DF4A4A;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB3{
+    color:#DFB51F;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB4{
+    color:#3366CC;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB5{
+    color:#1F25DF;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB6{
+    color:#DFB51F;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB7{
+    color:#004000;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB8{
+    color:#009900;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .ColorB9{
+    color:#DFB51F;
+    font-weight:bold;
+    text-align:center;
+}
+#page-mem .NumResult{
+    border:1px solid #CCC;
+}
+#page-mem .NumResult td,.NumResult th{
+    border:1px solid #CCC;
+}
+.calendar{
+    background:url(../calendar.gif) right no-repeat;
+    cursor:pointer;
+    border:1px solid #CCCCCC;
+    padding:2px;
+}
+input.calendar{
+	width: 90px;
+}
+
+/*其它*/
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	opacity: 0.85;
+}
+#tooltip h3, #tooltip div { 
+	margin: 0; 
+}
+/*彩票下注頁面*/
+#betbox .bet_top{
+  background:url(../image/bet_top.png) repeat-x;
+}
+#betbox .bet_bottom{
+  background:url(../image/bet_bottom.png) repeat-x;
+}
+/*left-line*/
+#betbox .bet_ll{
+  background:url(../image/bet_ll.png) repeat-y;
+}
+/*right-line*/
+#betbox .bet_rr{
+  background:url(../image/bet_rr.png) repeat-y;
+}
+/*top-left*/
+#betbox .bet_tl {
+  background:url(../image/bet_tl.png) no-repeat;
+}
+/*top-right*/
+#betbox .bet_tr {
+  background:url(../image/bet_tr.png) no-repeat;
+}
+/*bottom-left*/
+#betbox .bet_bl {
+  background:url(../image/bet_bl.png) no-repeat;
+}
+/*bottom-right*/
+#betbox .bet_br {
+  background:url(../image/bet_br.png) no-repeat;
+}
+
+#betbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#betbox .popup {
+  position: relative;
+}
+
+#betbox table {
+  border-collapse: collapse;
+}
+
+#betbox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+#betbox .bet_body {
+  padding: 0px;
+  background: #EFEFEF;
+  width: 200px;
+  font-size:12px;
+}
+#betbox .bet_top{
+	cursor: move;
+}
+#betbox .bet_close {
+  margin-top: 10px;
+  width:66px;
+  height:22px;
+  background:url(../image/bet_closelabel.gif);
+  background-position:0 top;
+  cursor:pointer;
+}
+#betbox #bet_reset,
+#betbox #bet_cancel,
+#betbox #bet_close,
+#betbox #bet_submit{
+  background:url(../image/wager_button.gif);
+  background-position:0 top;
+  width:60px;
+  height:26px;
+  color:#FFFFFF;
+  cursor:pointer;
+  border:0px;
+}
+
+#betbox .bet_tl, #betbox .bet_tr, #betbox .bet_bl, #betbox .bet_br {
+  height: 39px;
+  width: 39px;
+  overflow: hidden;
+  padding: 0;
+}
+/* 彩金說明 */
+a.jpbtn-zh-tw,
+a.jpbtn-zh-cn,
+a.jpbtn-en,
+a.jpbtn-th,
+a.jpbtn-ja,
+a.jpbtn-es,
+a.jpbtn-vi,
+a.jpbtn-ko,
+a.jpbtn-km,
+a.jpbtn-lo,
+a.jpbtn{
+    margin:0px auto;
+	display:block;
+	width:166px;
+	height:31px;
+	background: url(../PrizeRule_en.jpg) top left no-repeat;
+}
+a.jpbtn-zh-tw{
+	background: url(../PrizeRule_tw.jpg) top left no-repeat;
+}
+a.jpbtn-zh-cn{
+	background: url(../PrizeRule_cn.jpg) top left no-repeat;
+}
+
+a.jpbtn-zh-tw,
+a.jpbtn-zh-cn,
+a.jpbtn-en,
+a.jpbtn-th,
+a.jpbtn-ja,
+a.jpbtn-es,
+a.jpbtn-vi,
+a.jpbtn-ko,
+a.jpbtn-km,
+a.jpbtn-lo,
+a.jpbtn:hover{
+	background-positon:bottom;
+}
+a.prizeBB-zh-tw,
+a.prizeBB-zh-cn,
+a.prizeBB-en,
+a.prizeBB-th,
+a.prizeBB-ja,
+a.prizeBB-es,
+a.prizeBB-vi,
+a.prizeBB-ko,
+a.prizeBB-km,
+a.prizeBB-lo,
+a.prizeBB{
+    margin:0px auto;
+	display:block;
+	width:166px;
+	height:31px;
+	background: url(../PrizeBB_en.jpg) top left no-repeat;
+}
+a.prizeBB-zh-tw{
+	background: url(../PrizeBB_tw.jpg) top left no-repeat;
+}
+a.prizeBB-zh-cn{
+	background: url(../PrizeBB_cn.jpg) top left no-repeat;
+}
+#prizeDIV{
+	float:left;
+	position:relative;
+    width:184px;
+    margin-top:10px;
+    left:22px;
+    height:91px;
+    line-height:91px;
+    background:url(../prizeBG.jpg) no-repeat;
+}
+/*球類左側選單*/
+/* tab */
+#page-left-ball .gametab{
+	margin:0 !important; 
+	padding:0;
+	width:240px;
+	height:20px;
+}
+#page-left-ball .gametab li{
+	float:left;
+	padding:0; 
+	margin:0;  
+	list-style-type:none;
+		
+}
+#page-left-ball .gametab a{
+	float:left;
+	font-size:13px;
+	display:block;
+	width:68px;
+	height:20px;	
+	border-bottom:0px;
+	margin-right:1px;
+	line-height:20px;
+	text-align:center;
+	text-decoration:none;
+	border:1px solid #666666;	
+	border-bottom:0px;
+	background-color:#003300;
+	color:#FFFFFF;	
+	position:relative;
+	outline:0;
+	-moz-border-radius:4px 4px 0 0;	
+}
+#page-left-ball .gametab a.stab,
+#page-left-ball .gametab a:hover{
+	background-color:#B8DEB9;
+	color:#000;
+}
+#page-left-ball .gamePanes{
+	border:1px solid #666666;
+    width: 238px;
+}
+/* 連結  a, h3*/
+.select-game,
+.select-game:active,
+.select-game:visited{
+	display:block;
+	text-decoration:none;
+	font-size:12px;
+	color:#000;
+	width:238px;
+	font-weight : normal ;
+	height:25px;
+	line-height:25px;
+	text-indent:2.5em;
+	background-color: #B79B74;
+	border-bottom:1px #FFFFFF solid;
+}
+
+a.select-game-text:link,
+a.select-game-text:active,
+a.select-game-text:visited{
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    width:238px;
+    font-size: 12px;
+    text-indent:3em;
+    color: #3E3E3E;
+	height:25px;
+	line-height:25px;
+    text-decoration:none;
+    border-bottom:1px #FFFFFF solid;
+    background-color: #ffffff;
+}
+.select-game:hover,
+a.select-game-text:hover{
+    color:#FFFFFF;
+    background-color: #550700;
+}
+
+/*優惠活動*/
+#page-content-normal{
+    width:1004px;
+    float:left;
+}
+#page-content-exclusive{
+	float:left;
+	text-align:center;
+	width:1004px;
+	text-align:center;
+padding-bottom:15px;
+}
+/*共用頁面*/
+.Tpl-table01 {
+    background-color: #FFFFFF;
+    border: 1px solid #666;
+    color: #000;
+    font-size: 12px;
+}
+table .Tpl-title01 th{
+    background-color: #550700;  
+    height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* IE10 */ 
+    background: -ms-linear-gradient(top, #44354C 0%, #604B6B 100%);
+    /* Mozilla Firefox */ 
+    background: -moz-linear-gradient(top, #44354C 0%, #604B6B 100%);
+    /* Opera */ 
+    background: -o-linear-gradient(top, #44354C 0%, #604B6B 100%);
+    /* Webkit (Chrome 11+) */ 
+    background: -webkit-linear-gradient(top, #44354C 0%, #604B6B 100%);
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44354C', endColorstr='#604B6B',GradientType=0 );
+    /* Proposed W3C Markup */ 
+    background: linear-gradient(top, #44354C 0%, #604B6B 100%);
+}
+#Tpl-user-acc span{
+    line-height:20px;
+    color: #0000FF;
+}
+.Tpl-table01 th, .Tpl-table01 td {
+    height: 22px;
+    border: 1px solid #666;
+}
+tr.Tpl-trcolor1{
+    background: #FFFFFF;
+    /* IE10 */ 
+    background: -ms-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Mozilla Firefox */ 
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Opera */ 
+    background: -o-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Webkit (Chrome 11+) */ 
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Proposed W3C Markup */ 
+    background: linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+}
+tr.Tpl-trcolor2{
+    background: #EEEEEE;
+}
+tr.Tpl-trmouseenter {
+    background: #DEF;
+}
+#Tpl-memdata .Tpl-table01 th, #Tpl-memdata .Tpl-table01 td.Tpl-left{
+	text-align: center;
+}
+#Tpl-memdata .Tpl-table01 td.Tpl-right{
+    text-align: left;
+}
+.Tpl-blue {
+	color: #0000FF;
+}
+.Tpl-fontcolor1 {
+	color: #D73600;
+}
+.Tpl-fontcolor2 {
+	color: #0000FF;
+}
+.len { cursor:pointer;}

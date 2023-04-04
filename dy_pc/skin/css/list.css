@@ -1,0 +1,52 @@
+﻿html{
+    margin:0px auto;
+}
+body{
+    width:100%;
+    padding:0;
+    margin:0px auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    background: #CCCCCA;
+}   
+.wrapmain{width:948px; margin:0px auto; padding:0px;}
+.left_lottery_bg1{background-color:#900; height:30px; line-height:30px; color:#FF0; font-size:14px; text-align:center;}
+.left_lottery_bg1 a{background-color:#900; height:30px; line-height:30px; color:#FF0; font-size:14px; text-align:center;text-decoration: none;}
+.left_lottery_bg2{background-color:#EDF7F9; height:30px; line-height:30px;text-align:center; border-top:1px #02385A solid;}
+.left_lottery_bg2 a{background-color:#EDF7F9; height:30px; line-height:30px;text-align:center; text-decoration: none;}
+.left_lottery_bg3{background-color:#02385A; height:30px; line-height:30px;text-align:center; border-top:1px #02385A solid; color:#FFF; font-weight:bold;}
+.left_lottery_bg3 a{background-color:#02385A; height:30px; line-height:30px;text-align:center; color:#FFF; font-weight:bold;text-decoration: none;}
+.bottom{
+width: 976px;
+margin: auto;
+background:#244356;
+height:30px;
+border-top:1px solid #FFF;
+color:#FFF;
+line-height:30px;
+padding:0 10px;}
+.bottom span{color:#CCC; float:right;}
+.bet_redbg{ background-color:#900; color:#FFF;cursor:pointer;}
+.bet_bluebg{ background-color:#02385A; color:#FFF;cursor:pointer;}
+.bet_greenbg{ background-color:#060; color:#FFF;cursor:pointer;}
+.bet_heibg{ background-color:#000; color:#FFF;cursor:pointer;}
+.bet_redbg span{ float:right; color:#FF0;}
+.bet_bluebg span{ float:right; color:#FF0;}
+.bet_greenbg span{ float:right; color:#FF0;}
+.bet_heibg span{ float:right; color:#FF0;}
+.six_menu{ padding:0; margin:0; width:742px;}
+.six_menu ul{list-style-type: none;width:740px;height:28px;overflow:hidden;background:url(skin/MenuBG.jpg) 0 0 repeat-x;padding:0;margin:0;float:left; border-top:1px solid #CCE5FC;border-left:1px solid #CCE5FC;border-right:1px solid #CCE5FC;border-bottom:1px solid #011F31;}
+.six_menu li {float:left;background:url(skin/MenuBG.jpg) 0 0 repeat-x;text-align:center;}
+.six_menu li a {display:block;color:#002F4A;line-height:28px;font-weight:bold; width:80px; border-right:1px solid #011F31;}
+.six_menu li a:hover {background:#024467 url(skin/loginbg.gif) no-repeat; font-weight:bold; color:#FFF;}
+.six_menu li.current a{background:#024467 url(skin/loginbg.gif) no-repeat; font-weight:bold; color:#FFF;}
+.ltype_ok{ width:190px; height:30px; line-height:30px; margin-top:5px;}
+.ltype_ok ul{ padding:0; margin:0; float:left; text-align:center;}
+.ltype_ok ul li{ width:190px;height:30px;list-style-type:none;background-color:#333;}
+.ltype_ok ul li a{ color:#FFF; font-weight:bold}
+.ltype_ok ul li a:hover{ color:#F00;font-weight:bold}
+.ltype_ok ul li .current {color:#F00;}
+.klb_bg{ font-size:16px; font-weight:bold;cursor:pointer; color:#FFF; border-right: 5px solid #CCE5FC; border-bottom: 5px solid #CCE5FC;}
+.klb_bg span{ font-size:14px; color: #FF0;}
+.mybordertd { border-right: 5px solid #CCE5FC; border-bottom: 5px solid #CCE5FC; }
+.mybordertable { border-top: 5px solid #CCE5FC; border-left: 5px solid #CCE5FC; }

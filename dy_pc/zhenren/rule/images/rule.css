@@ -1,0 +1,96 @@
+/***  init  ***/
+body, div, table, img { margin: 0; padding: 0; }
+br { letter-spacing: 0; }
+th { white-space: nowrap; }
+th, thead td { text-align: center; }
+
+
+/***  language  ***/
+body.us { font-family: Verdana; }
+body.cn { font-family: "Microsoft YaHei",微软雅黑,"simhei"; }
+
+body { font-family: Arial,Helvetica,sans-serif; }
+
+/***  wrapper  ***/
+body { text-align: center; font-size: 12px; }
+#banner , #outter{ width: 1000px; margin: 0 auto; }
+#banner { height: 80px; }
+#banner img { float: left; }
+#inner { width: 890px; margin: 0 auto; text-align: left; }
+.entry { margin-bottom: 25px; }
+
+.box-top, .box-bottom {
+	width: 890px; height: 9px;
+	display: block; margin: 0; padding: 0;
+	font-size: 1px;
+}
+
+.box-top { background: url('../images/pic_from01.gif') no-repeat bottom; }
+.box-bottom { background: url('../images/pic_from03.gif') no-repeat top; }
+
+
+.box {
+	background: url('../images/pic_from02.gif') repeat-y;
+	padding: 0 18px;
+	color: #333333;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 22px;
+}
+
+.box * { margin: 0; }
+
+.box ol, .box ul { padding-left: 18px; }
+
+/***  button  ***/
+.gotop_btn {
+	background: url('../images/pic_top.gif') no-repeat;
+	width: 47px;
+	height: 16px;
+	border: none;
+	margin-top: 3px;
+	cursor: pointer;
+	float: right;
+}
+
+/***  subtitle  ***/
+
+div.subtitle {
+  background: url('../images/subtitle_bg1.gif') no-repeat center left;
+  padding-left: 33px;
+
+}
+
+div.subtitle span.subtitle {
+  color: #990000;
+  font-size: 12px;
+  font-weight: bold;
+  background: url('../images/subtitle_bg2.gif') no-repeat center right;
+  padding-right: 9px;
+}
+
+/***  function-list  ***/
+
+ul.function-list { list-style: none; padding: 0; }
+ul.function-list li
+{
+	background: url('../images/icon.gif') no-repeat center left;;
+	padding: 3px 0 3px 15px;
+}
+.function-list b, .function-list strong { color: #FF6600; font-weight: normal; }
+.function-list img { vertical-align: middle; }
+
+/***  jp-table   ***/
+
+.jp-table { border: 5px double #b0b0b0; border-collapse:collapse; }
+.jp-table td, .jp-table th { border: 1px solid #bbb; padding: 4px; }
+.jp-table .label td, .jp-table .label th { background: #fcfec9;  text-align: center; }
+.jp-table .heading td, .jp-table .heading th { background: #d2f4da; text-align: center; font-weight: bold; }
+
+.jp-table .point1, .jp-table .point2 { font-size: 16px; font-weight: bold; font-family: Verdana; }
+.jp-table .point1 { color: #FF3300; }
+.jp-table .point2 { color: #990000; }
+
+.border-table { border: 5px double #b0b0b0; border-collapse:collapse; width: 700px; }
+.border-table td, .border-table th { border: 1px solid #bbb; padding: 4px; }
+.center-table td { text-align: center; }

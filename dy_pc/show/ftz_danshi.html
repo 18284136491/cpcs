@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>home</title>
+<meta http-equiv="Cache-Control" content="max-age=864000" />
+<link href="style/css/right.css" rel="stylesheet" type="text/css" />
+<link href="style/css/jquery_dialog.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="style/js/jquery.js"></script>
+<script language="javascript" src="style/js/jquery_dialog.js"></script>
+<script language="javascript" src="style/js/common.js"></script>
+<script language="javascript" src="ftz_danshi.js"></script>
+<script language="javascript" src="style/js/bet_match.js"></script>
+</head>
+<body class="right_body">
+<div id="right_1">
+<div id="shuaxin">
+    <div id="r_t_2">早足单式</div>
+	<div id="shuzi">
+	  <div id="top" style="vertical-align:top; cursor:pointer"></div>
+	</div>
+	<div class="shuaxin2">
+      	<a href="javascript:void(0)" onclick="javascript:shuaxin(document.getElementById('league').value);" title="点击刷新"><input type="button" value="刷新" class="subcla" id="sx_f5"/></a><input type="hidden" name="top_f5" id="top_f5" value="0"  />
+        <div style="display:none" id="aaaaa">0</div>
+	</div>
+	<div class="xzls"><input type="hidden" name="league" id="league" value=""  /><input type="button" id="xzls" value="选择联赛" class="subcla1" /></div>
+  </div>
+</div>
+<div id="right_2">
+  <div id="lantiao">
+    <div class="bai_x zu_danshi_time">时间</div>
+	<div class="bai_x zu_danshi_zk">主客队伍</div>
+	<div class="bai_x zu_danshi_dy2">独赢</div>
+	<div class="bai_x zu_danshi_rf">让球</div>
+	<div class="bai_x zu_danshi_dx">大小</div>
+	<div class="bai_x zu_danshi_ds">单双</div>
+    <div class="bai_x zu_danshi_dy">上半独赢</div>
+	<div class="bai_x zu_danshi_rf">上半让球</div>
+	<div class="bai_z zu_danshi_dx">上半大小</div>
+  </div>
+  <div id="datashow">
+		<div style="padding:10px; text-align:center">数据读取中...</div>
+  </div>
+</div>
+</body>
+<script language="javascript" src="style/js/times.js"></script>
+<script language="javascript" src="style/js/mouse.js"></script>
+<script type="text/javascript">
+    loaded(document.getElementById('league').value,0);
+</script>
+</html>

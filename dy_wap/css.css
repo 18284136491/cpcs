@@ -1,0 +1,108 @@
+*{margin:0;padding:0}
+body{font-family:"微软雅黑";background:#DAD9D7}
+img{border:none}
+a *{cursor:pointer}
+ul,li{list-style:none}
+table{table-layout:fixed;}
+table tr td{word-break:break-all; word-wrap:break-word;}
+
+
+
+
+/*404 yem*/
+a{text-decoration:none;outline:none}
+a:hover{text-decoration:underline}
+.cf:after{content: ".";display: block;height: 0;font-size: 0;clear:both;visibility: hidden;}
+.cf{zoom: 1;clear:both}
+.bg{
+	background:url(images/01.jpg) no-repeat center top #DAD9D7;
+}
+.cont{margin:0 auto; width:500px;line-height:20px;}
+.c1{height:360px;text-align:center}
+.c1 .img1{margin-top:180px}
+.c1 .img2{margin-top:165px}
+.cont h2{text-align:center;color:#555;font-size:18px;font-weight:normal;height:35px}
+.c2{height:35px;text-align:center}
+.c2 a{display:inline-block;margin:0 4px;font-size:14px;height:23px;color:#626262;padding-top:1px;text-decoration:none;text-align:left}
+.c2 a:hover{color:#626262;text-decoration:none;}
+.c2 a.home{width:66px;background:url(images/02.png);padding-left:30px;}
+.c2 a.home:hover{background:url(images/02.png) 0 -24px}
+.c2 a.home:active{background:url(images/02.png) 0 -48px}
+.c2 a.re{width:66px;background:url(images/03.png);padding-left:30px}
+.c2 a.re:hover{background:url(images/03.png) 0 -24px}
+.c2 a.re:active{background:url(images/03.png) 0 -48px}
+.c2 a.sr{width:153px;background:url(images/04.png);padding-left:28px}
+.c2 a.sr:hover{background:url(images/04.png) 0 -24px}
+.c2 a.sr:active{background:url(images/04.png) 0 -48px}
+.c3{height:180px;text-align:center;color:#999;font-size:12px}
+#bf{position:absolute;top:269px;left:0;width:100%}
+.bf1{margin:0 auto;width:99px;padding-left:32px}
+.bd{height:600px;overflow:hidden}
+#box{position:absolute;top:165px;left:0;width:100%;text-align:center}
+.bf1{margin:0 auto;width:99px;padding-left:32px}
+
+
+
+
+
+
+
+
+
+
+
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px
+}
+TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px
+}
+.pagetitle {
+	FONT: bolder 14px Arial, "黑体"; COLOR: #0066ff; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #0240a3
+}
+A:visited {
+	COLOR: #0240a3
+}
+#top {
+	BACKGROUND-POSITION: right top; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(CreateIng/top_bg.jpg); MARGIN-BOTTOM: 40px; WIDTH: 100%; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 51px
+}
+#content {
+	BACKGROUND: url(CreateIng/skel_bg.gif) #f9f9f9 no-repeat right top; MARGIN: auto; WIDTH: 625px; HEIGHT: 251px
+}
+
+
+/*caipiao dingyi*/
+.xiaz .xz .caip{ width:900px; margin:0 auto; height:116px; overflow:hidden; margin-top:20px;}
+.xiaz .xz .caip .cp01{ float:left; width:430px; background:url(images/cp.jpg) no-repeat; width:430px; height:116px; clear:both;}
+.xiaz .xz .caip .cp01 img{ float:right; width:225px;}
+.xiaz .xz .caip .cp01 .text{ float:left; width:170px; margin-left:30px;}
+.xiaz .xz .caip .cp01 .text h3{ height:46px; line-height:46px; color:#f6dca9;}
+.xiaz .xz .caip .cp01 .text p a{color:#f6dca9;}
+.xiaz .xz .caip .cp02{ float:right; width:430px; background:url(images/cp.jpg) no-repeat; width:430px; height:116px;}
+.xiaz .xz .caip .cp02 img{ float:right; width:225px;}
+.xiaz .xz .caip .cp02 .text{ float:left; width:170px; margin-left:30px;}
+.xiaz .xz .caip .cp02 .text h3{ height:46px; line-height:46px; color:#f6dca9;}
+.xiaz .xz .caip .cp02 .text p a{color:#f6dca9;}
+
+/*moban kais*/
+.xiaz .xz .wl{ width:236px; float:left;}
+.xiaz .xz .wl ul{ width:234px; background:#450a2d; border:1px solid #823569; padding:10px 0;}
+.xiaz .xz .wl ul li{ text-decoration:none; list-style:none; text-align:center;}
+.xiaz .xz .wl ul li a{ color:#f9b9de; line-height:50px; height:50px; width:234px; display:block;}
+.xiaz .xz .wl ul li a:hover{ background:#9e1c68;}
+
+.xiaz .xz .neir{ float:right; width:700px; background:#620b3e; padding:20px; border:1px solid #823569; color:#fffdfe;}
+.xiaz .xz .neir p{ line-height:24px;}
+.xiaz .xz .neir h2{ color:#FFFF00;}
+.xiaz .xz .neir h3{ color:#FFFF00; margin-top:20px;}
+.xiaz .xz .neir a{ color:#FFFF00; text-decoration:none;}
+.xiaz .xz .neir a:hover{ text-decoration:underline;}
+
+/*weihu kais*/
+.weihu{ width:594px; margin:0 auto; margin-top:20px; color:#505050;}
+.weihu p{ height:24px; line-height:24px; text-align:center; margin-top:10px;}
+.weihu p a{ color:#9e1c68; text-decoration:none;}
+.weihu p a:hover{ text-decoration:underline;}

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>时时彩</title>
+<meta http-equiv="Cache-Control" content="max-age=864000" />
+<link href="/css/left.css" rel="stylesheet" type="text/css">
+<link href="/css/tikuan2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="bet_mes" style="height:30px; width:300px; text-align:center; line-height:30px; border:1px #006600 solid; color:#006600; margin:0 auto">
+  注单信息正在生成，请您稍等...
+</div>
+<form action="/bet_jsc_odd.php" name="bet_odd" id="bet_odd" method="post" onsubmit="return setbet_odd();" style="margin:0 0 0 0;">
+<div id="bet_data" class="table-responsive">
+</div>
+</form>
+</body>
+<script language="javascript" src="/js/jquery.js"></script>
+<script>
+function Ok(){
+	top.mem_index.J_GamesFrame.J_betiframe.f5_left();
+	if(confirm("确定要投注吗？")){
+		var data = $("#bet_odd").serialize();
+		var z_bet_win = $('#z_bet_win').val();
+		var z_bet_money = $('#z_bet_money').val();
+		if(z_bet_win > 0 && z_bet_money > 0){			
+			$.post(
+			    '/bet_jsc_odd.php?callback=?',
+				data,
+				function(json){console.log(json);
+					if(json.result == "OK"){
+						alert(json.title);
+						window.parent.getTime(); //校正因弹出框js时间不走问题
+						top.mem_index.J_GamesFrame.J_betiframe.f5_left(); //刷新余额
+						//window.parent.parent.mainFrame.repeat();
+						//window.parent.parent.mainFrame.clos_Fc();
+						//window.parent.location.href = '/jsc/index.html?';
+						$(parent.window.document).find('#jd_shadow').remove();
+						$(parent.window.document).find('#jd_dialog').remove();
+						$(parent.window.document).find('#bet_odd input').val('');
+						return false;
+					}else if(json.result == "Error_point"){
+						var li = json.li+1;
+						$("#bet_odd table tr:eq("+li+")").css('background-color','#FFC1C6');
+						$("#bet_odd table tr:eq("+li+") td:eq(2)").html(json.point);
+						$("#bet_odd table tr:eq("+li+") input[class='bet_point']").val(json.point);
+						alert(json.title);
+						window.parent.getTime(); //校正因弹出框js时间不走问题
+						return false;
+					}else if(json.result == "Error_Money"){
+						var li = json.li+1;						
+						$("#bet_odd table tr:eq("+li+")").css('background-color','#FFC1C6');
+						alert(json.title);
+						window.parent.getTime(); //校正因弹出框js时间不走问题
+						return false;
+					}else if(json.result){
+						alert(json.result);
+						window.parent.getTime(); //校正因弹出框js时间不走问题
+						window.parent.parent.mainFrame.repeat();
+						window.parent.parent.mainFrame.clos_Fc();
+						return false;
+					}else{
+						//top.window.location.href = '/';
+					}
+				},
+				'json'
+			);
+			
+		}else{
+			alert('没有任何投注信息');
+			window.parent.getTime(); //校正因弹出框js时间不走问题
+		}		
+	}else{
+		window.parent.getTime(); //校正因弹出框js时间不走问题
+	    return false;
+	}
+}
+
+$().ready(function(){
+	$("#bet_odd table td img").live("click",function(){		
+		var thisTR = $(this).parent().parent();
+		if(confirm("确定要删除此项注单吗？")){
+			thisTR.remove();
+			var z_bet_money = 0, z_bet_win = 0, z_bet_point = 0;
+			var bet_money = $('.bet_money');
+			var bet_win = $('.bet_win');
+			var bet_point = $('.bet_point')
+			var re = /([0-9]+\.[0-9]{2})[0-9]*/;
+			bet_money.each(function(i,v){
+				z_bet_money += parseFloat($(v).val());
+			});
+			bet_win.each(function(i,v){
+				z_bet_win += parseFloat($(v).val());
+			});
+			bet_point.each(function(i,v){
+				z_bet_point += parseFloat($(v).val());
+			});
+			
+			z_bet_point = Math.round(z_bet_point*100)/100;
+			z_bet_win = Math.round(z_bet_win*100)/100;
+			z_bet_money = Math.round(z_bet_money*100)/100;
+			
+			$('#z_bet_win').val(z_bet_win);
+			$('.z_bet_win').html(z_bet_win);
+			$('#z_bet_money').val(z_bet_money);
+			$('.z_bet_money').html(z_bet_money);
+			$('.z_bet_point').html(z_bet_point);
+			
+			window.parent.parent.mainFrame.ch_WH();
+			//$(parent.window.document).find('#jd_iframe').height($('body').height()+10);
+			//$(parent.window.document).find('#jd_dialog_m_b').height($('body').height()+10);
+			var TL = $('#bet_odd table tr');
+			if(TL.size() <= 2){
+				$(parent.window.document).find('#jd_shadow').remove();
+				$(parent.window.document).find('#jd_dialog').remove();
+			}
+		}else
+		    return false;
+	});
+});
+</script>
+<script type="text/javascript" language="javascript" src="../js/left_mouse.js"></script>
+</html>

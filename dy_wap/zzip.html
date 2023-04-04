@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>您已被禁止访问</title>
+<style type="text/css">
+<!--
+.gz{
+	height:500px;
+	background-image: url(images/403.gif);
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+}
+.msg{
+	font-size:12px;
+	text-align:left;
+	width:400px;
+	color:#666666;
+	padding-top:275px;
+	margin:0 auto;
+}
+body {
+	background-color: #EEEEEE;
+}
+-->
+</style>
+</head>
+<script type="text/javascript">
+function check(){
+  	if(document.getElementById("vlcodes").value.length < 4){
+		alert("请您输入验证码");
+		document.getElementById("vlcodes").focus();
+		return false;
+  	}
+}
+function next_checkNum_img(){
+	document.getElementById("checkNum_img").src = "../yzm.php?"+Math.random();
+	return false;
+}
+</script>
+<body>
+<form id="form1" name="form1" method="post" action="ban_ip.php" onsubmit="return check();">
+<div class="gz">
+	<div class="msg"><br><br>由于您频繁恶意刷新网站，您已被禁止访问！<br>
+		要是您是无心的，您可以申诉解禁，让管理员解除您的限制！<br>
+		<br>
+		验证码：<input name="vlcodes" type="text" id="vlcodes" size="4" maxlength="4" onfocus="next_checkNum_img();" />&nbsp;&nbsp;<img src="yzm.php" alt="点击更换" name="checkNum_img" id="checkNum_img" style="cursor:pointer; position:relative; top:3px;" onclick="next_checkNum_img()" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="Submit" value="申请解禁" />
+	</div>
+</div>
+</form>
+<script type="text/javascript" language="javascript" src="/js/left_mouse.js"></script>
+</body>
+</html>

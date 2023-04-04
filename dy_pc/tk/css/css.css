@@ -1,0 +1,76 @@
+/* CSS Document */
+* {
+    margin: 0;
+	padding: 0;
+}
+body {
+    font-size: 12px;
+	font-family: "宋体";
+	background: #FFFFFF url(../../images/r_1.gif) repeat-y left;
+	width:98%;
+}
+#top_bg {
+    background: url(../images/top_gs_bg.gif) no-repeat;
+	width: 787px;
+	height: 37px;
+}
+.bt00 {
+    float: left;
+	width: 78px;
+	padding: 16px 0 0 24px;
+	font-weight: bold;
+	color: #012B78;
+	font-size: 12px;
+}
+table {
+    text-align: left;
+}
+a:link,a:active,a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+    color: #333333;
+}
+p {
+	line-height: 22px;
+	text-indent: 24px;
+    padding: 0 10px;
+}
+#top {
+    width: 730px;
+	color: #DD0000;
+	padding: 20px 0 0 30px;
+	text-align:center;
+}
+#center {
+    width: 730px;
+	height: 100%;
+	clear: both;
+	padding: 8px 0 30px 26px;
+}
+.biao {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	margin: 16px 0;
+	padding: 0 0 0 26px;
+	color: #00257D;
+	background: url(../images/h1.gif) no-repeat left;
+}
+h1 {
+	line-height: 22px;
+    margin: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #003399;
+}
+.huise {
+    color: #666;
+	text-indent: 34px;
+}
+#banquan {
+    padding: 10px 0 14px 30px;
+    width: 730px;
+	text-align: center;
+}

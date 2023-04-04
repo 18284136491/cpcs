@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<meta http-equiv="Cache-Control" content="max-age=8640000" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="login.php" onsubmit="return check();">
+<div class="dibg">
+	<div class="border">
+		<div class="shuo">
+			<div class="shuo_img"><img src="images/shuo.jpg" alt="shuo" width="70" height="95" /></div>
+			<div class="shuo_txt"><h2><strong>后台管理系统</strong></h2></div>
+		</div>
+		<div class="main">
+			<table width="224" height="121" border="0" cellpadding="0" cellspacing="0">
+			  <tr>
+				<td width="51" height="27">登录名：</td>
+				<td colspan="2"><input name="LoginName" type="text" class="textbox" id="LoginName" style="width:130px;" maxlength="20"/></td>
+			  </tr>
+			  <tr>
+				<td height="27">密码为：</td>
+				<td colspan="2"><input name="LoginPassword" type="password"  class="textbox" style="width:130px;" id="LoginPassword" /></td>
+			  </tr>
+			  <tr>
+				<td height="33">验证码：</td>
+				<td width="65"><input name="CheckCode" type="text"  class="textbox1" id="CheckCode" size="6" maxlength="4" /></td>
+				<td width="79"><div style="padding:2 0 0 5px; cursor:pointer; width:50px;"><img src="../yzm.php" name="yzm" width="50" height="20" id="yzm" title="点击更换"/></div></td>
+			  </tr>
+			  <tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="dl" value="登录"  class="button"/></td>
+				<td><input type="reset" name="cz" value="重置"  class="button"/></td>
+			  </tr>
+		  </table>
+		</div>
+	</div>
+</div>
+</form>
+<script type="text/javascript" language="javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="js/index.js"></script>
+</body>
+</html>
