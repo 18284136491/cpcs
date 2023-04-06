@@ -3,7 +3,7 @@
 //error_reporting(0);
 unset($mysqli);
 $_SESSION['expiretime']=time()+1200;
-$mysqli	=	new MySQLi("127.0.0.1","root","root","dy1_db");
+$mysqli	=	new MySQLi("mysql","root","root","dy1_db");
 $mysqli->query("set names utf8");
 
 

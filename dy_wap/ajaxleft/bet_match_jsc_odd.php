@@ -69,7 +69,7 @@ $xj=0;
       <td width="100">可赢</td>
       <td width="50">操作</td>
     </tr>
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_1'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -85,14 +85,14 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第一球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第一球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第一球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第一球'][$key];
 		 }
 	 }
 	 ?>
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_1_lm'] as $key => $value) {
 		 if($key==0){
 			 $key="大";
@@ -117,7 +117,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第一球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第一球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第一球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第一球'][$key];
@@ -125,7 +125,7 @@ $xj=0;
 	 }
 	 ?>
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_2'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -141,14 +141,14 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第二球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第二球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第二球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第二球'][$key];
 		 }
 	 }
 	 ?>
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_2_lm'] as $key => $value) {
 		 if($key==0){
 			 $key="大";
@@ -173,7 +173,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第二球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第二球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第二球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第二球'][$key];
@@ -181,7 +181,7 @@ $xj=0;
 	 }
 	 ?>   
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_3'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -197,14 +197,14 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第三球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第三球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第三球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第三球'][$key];
 		 }
 	 }
 	 ?>
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_3_lm'] as $key => $value) {
 		 if($key==0){
 			 $key="大";
@@ -229,7 +229,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第三球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第三球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第三球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第三球'][$key];
@@ -238,7 +238,7 @@ $xj=0;
 	 ?>
      
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_4'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -254,14 +254,14 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第四球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第四球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第四球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第四球'][$key];
 		 }
 	 }
 	 ?>
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_4_lm'] as $key => $value) {
 		 if($key==0){
 			 $key="大";
@@ -286,7 +286,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第四球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第四球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第四球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第四球'][$key];
@@ -294,7 +294,7 @@ $xj=0;
 	 }
 	 ?>
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_5'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -310,14 +310,14 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第五球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第五球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第五球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第五球'][$key];
 		 }
 	 }
 	 ?>
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_5_lm'] as $key => $value) {
 		 if($key==0){
 			 $key="大";
@@ -342,7 +342,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="第五球" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['第五球'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['第五球'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['第五球'][$key];
@@ -350,7 +350,7 @@ $xj=0;
 	 }
 	 ?>   
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_lm'] as $key => $value) {
 		 if($key==0){
 			 $key="大";
@@ -375,7 +375,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="总和" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['总和'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['总和'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['总和'][$key];
@@ -383,7 +383,7 @@ $xj=0;
 	 }
 	 ?>     
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_lh'] as $key => $value) {
 		 if($key==0){
 			 $key="龙";
@@ -404,7 +404,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="龙虎和" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['龙虎和'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['龙虎和'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['龙虎和'][$key];
@@ -412,7 +412,7 @@ $xj=0;
 	 }
 	 ?>
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_h'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -428,7 +428,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="龙虎和" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['龙虎和']['和']*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['龙虎和']['和']*$value;
 			$tze+=$value;
 			$xj+=$rate['龙虎和']['和'];
@@ -437,7 +437,7 @@ $xj=0;
 	 ?>       
                         
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_bz'] as $key => $value) {
 		 if($key==0){
 			 if($ball_sort=='重庆时时彩'){
@@ -464,7 +464,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="<?= $key ?>" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate[$key]['豹子']*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate[$key]['豹子']*$value;
 			$tze+=$value;
 			$xj+=$rate[$key]['豹子'];
@@ -472,7 +472,7 @@ $xj=0;
 	 }
 	 ?> 
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_sz'] as $key => $value) {
 		 if($key==0){
 			 if($ball_sort=='重庆时时彩'){
@@ -499,7 +499,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="<?= $key ?>" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate[$key]['顺子']*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate[$key]['顺子']*$value;
 			$tze+=$value;
 			$xj+=$rate[$key]['顺子'];
@@ -507,7 +507,7 @@ $xj=0;
 	 }
 	 ?> 
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_dz'] as $key => $value) {
 		 if($key==0){
 			 if($ball_sort=='重庆时时彩'){
@@ -534,7 +534,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="<?= $key ?>" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate[$key]['对子']*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate[$key]['对子']*$value;
 			$tze+=$value;
 			$xj+=$rate[$key]['对子'];
@@ -542,7 +542,7 @@ $xj=0;
 	 }
 	 ?> 
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_bs'] as $key => $value) {
 		 if($key==0){
 			 if($ball_sort=='重庆时时彩'){
@@ -569,7 +569,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="<?= $key ?>" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate[$key]['半顺']*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate[$key]['半顺']*$value;
 			$tze+=$value;
 			$xj+=$rate[$key]['半顺'];
@@ -577,7 +577,7 @@ $xj=0;
 	 }
 	 ?> 
      
-     <?
+     <?php
 	 foreach ($_REQUEST['jsc_z6'] as $key => $value) {
 		 if($key==0){
 			 if($ball_sort=='重庆时时彩'){
@@ -604,7 +604,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="<?= $key ?>" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate[$key]['杂六']*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate[$key]['杂六']*$value;
 			$tze+=$value;
 			$xj+=$rate[$key]['杂六'];
@@ -612,7 +612,7 @@ $xj=0;
 	 }
 	 ?>   
      
- 	<?
+ 	<?php
 	 foreach ($_REQUEST['jsc_kd'] as $key => $value) {
 		 if(intval($value)>0){
 	 ?>
@@ -628,7 +628,7 @@ $xj=0;
         <input type="hidden" name="bet_money[]" class="bet_money" value="<?=$value ?>" />
         <input type="hidden" name="touzhuxiang[]" value="跨度" />
         <input type="hidden" name="bet_win[]" class="bet_win" value="<?=$rate['跨度'][$key]*$value ?>" /></tr>    
-     <?
+     <?php
 	 		$ky+=$rate['跨度'][$key]*$value;
 			$tze+=$value;
 			$xj+=$rate['跨度'][$key];

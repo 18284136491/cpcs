@@ -1,4 +1,4 @@
-<?
+<?php
 class page extends mysql 
 {
 	/* example:

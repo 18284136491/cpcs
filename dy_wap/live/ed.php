@@ -11,7 +11,7 @@ include_once("config.php");
 $sign = md5($plantform."_".$merID."_".$key."_".$username);
 
 include_once("../include/config.php");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/mysqli.php");
 include_once("../include/mysqlit.php");
 include_once("../class/user.php");

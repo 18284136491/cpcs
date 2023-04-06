@@ -4,7 +4,7 @@ if(!$_SESSION['uid']){
 	echo "<script>alert('请您登陆后再来申请代理！！');history.go(-1);</script>";
 	exit();	
 }
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/config.php");
 include_once("../include/mysqli.php");
 include_once("../class/user.php");

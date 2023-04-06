@@ -1,6 +1,6 @@
 <?php
-include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include_once("../include/config.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -111,7 +111,7 @@ if(self==top){
 					<tr bgcolor="#FFFFFF">
     	<td height="30" colspan="5" align="center" class=" STYLE1">暂无记录</td>
     </tr>
-					<?
+					<?php
 					}else{
 						$id		=	rtrim($id,',');
 						$sql	=	"select * from `ag_zhenren_zz` where id in($id) order by id desc";

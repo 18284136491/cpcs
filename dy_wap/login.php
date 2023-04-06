@@ -89,15 +89,15 @@ $f_class = ' abs';
             success: function(data) {
                 if(data.indexOf("3") >= 0) {
                     var e = function() {
-                        $("#passwd").val("");
-                        $("#username").val("").focus();
+                        // $("#passwd").val("");
+                        // $("#username").val("").focus();
                         $("#loginBtn").attr("disabled", false);
                     };
                     lay_msg('账号异常无法登陆，如有疑问请联系在线客服！', e);
                 } else if(data.indexOf("2") >= 0) {
                     var e = function() {
-                        $("#passwd").val("");
-                        $("#username").val("").focus();
+                        // $("#passwd").val("");
+                        // $("#username").val("").focus();
                         $("#loginBtn").attr("disabled", false);
                     };
                     lay_msg('账号或密码错误，请重新输入！', e);

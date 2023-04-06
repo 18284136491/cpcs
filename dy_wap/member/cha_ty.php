@@ -1,6 +1,6 @@
 <?php
 include_once("../include/config.php");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -120,7 +120,7 @@ $jine = 0;
                                 <td>
                                     <div>
                                         <?= $rows["ball_sort"] ?>
-                                        <?
+                                        <?php
                                         $m = explode('-', $rows["bet_info"]);
                                         if ($rows["ball_sort"] == "冠军" || $rows["ball_sort"] == "金融") ;
                                         else echo $tz_type = $m[0];
@@ -139,7 +139,7 @@ $jine = 0;
                                     <hr>
                                     <div>
                                         <span class="c_blue f_b"><?= $rows["match_name"] ?></span>
-                                        <?
+                                        <?php
                                         //正则匹配
                                         $m_count = count($m);
                                         preg_match('[\((.*)\)]', $m[$m_count - 1], $matches);
@@ -159,28 +159,28 @@ $jine = 0;
                                         }
                                         ?>
                                         <br/>
-                                        <? if (mb_strpos($m[1], "让") > 0) { //让球?>
-                                            <? if (strtolower($rows["match_showtype"]) == "c") { //客让?>
+                                        <?php if (mb_strpos($m[1], "让") > 0) { //让球?>
+                                            <?php if (strtolower($rows["match_showtype"]) == "c") { //客让?>
                                                 <?= $team[1] ?>
                                                 <?= str_replace(array("主让", "客让"), array("", ""), $m[1]) ?>
                                                 <?= $team[0] ?>(主)
-                                            <? } else { //主让?>
+                                            <?php } else { //主让?>
                                                 <?= $team[0] ?>
                                                 <?= str_replace(array("主让", "客让"), array("", ""), $m[1]) ?>
                                                 <?= $team[1] ?>
-                                            <? } ?>
-                                            <?
+                                            <?php } ?>
+                                            <?php
                                             $m[1] = "";
                                         } else { ?>
                                             <?= $team[0] ?>
-                                            <? if (isset($score)) { ?>
+                                            <?php if (isset($score)) { ?>
                                                 <?= $score ?>
-                                            <? } else { ?>
-                                                <? if ($team[1] != "") { ?>VS.<? }
+                                            <?php } else { ?>
+                                                <?php if ($team[1] != "") { ?>VS.<?php }
                                             } ?><span class="c_red"><?= $team[1] ?></span>
-                                        <? } ?>
+                                        <?php } ?>
                                         <br/>
-                                        <?
+                                        <?php
                                         //半全场替换显示
                                         $arraynew = array($team[0], $team[1], "和局", " / ", "局");
                                         $arrayold = array("主", "客", "和", "/", "局局");
@@ -201,7 +201,7 @@ $jine = 0;
                                             echo " @ <span class='c_red'>" . $ss[1] . "</span>";
                                         }
                                         ?>
-                                        <?
+                                        <?php
                                         if (($rows["status"] != 0) && ($rows["status"] != 3) && ($rows["status"] != 7) && ($rows["status"] != 6))
                                             if ((strtolower($rows["match_showtype"]) == "c") && (strpos('&match_ao,match_ho,match_bho,match_bao&', $rows["point_column"]) > 0)) {
                                                 ?>
@@ -217,12 +217,12 @@ $jine = 0;
                                             } else {
                                                 ?>
                                                 [<?= $rows["MB_Inball"] ?>:<?= $rows["TG_Inball"] ?>]
-                                            <? } ?>
-                                        <? if ($rows["lose_ok"] == 0 && $rows["ball_sort"] == "足球滚球") { ?>
+                                            <?php } ?>
+                                        <?php if ($rows["lose_ok"] == 0 && $rows["ball_sort"] == "足球滚球") { ?>
                                             [确认中]
-                                        <? } else if ($rows["status"] == 0 && $rows["ball_sort"] == "足球滚球") { ?>
+                                        <?php } else if ($rows["status"] == 0 && $rows["ball_sort"] == "足球滚球") { ?>
                                             [已确认]
-                                        <? } ?>
+                                        <?php } ?>
                                     </div>
                                 </td>
                                 <td>
@@ -235,7 +235,7 @@ $jine = 0;
                                     </span>
                                 </td>
                                 <td>
-                                    <?
+                                    <?php
                                     if ($rows["status"] == 0) {
                                         echo '未知';
                                     } else {

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../class/user.php");
@@ -27,7 +27,7 @@ if(@$_GET["action"]=="tikuan"){
 	$sql = "select count(*) as c from k_money where uid='$uid' and m_value<0 and m_make_time > '$date_s' and m_make_time < '$date_e'";
 	$query	=	$mysqli->query($sql);  		
 	$one	=	$query->fetch_array();
-	if($one[c]>=3){
+	if($one['c']>=3){
 		message("您的本次提款申请失败，由于银行系统管制，每个帐号每天限制只能提款3次。");exit;
 	}
     //验证取款密码

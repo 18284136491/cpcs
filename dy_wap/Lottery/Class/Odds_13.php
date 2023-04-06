@@ -18,6 +18,7 @@ while ($odds = $query->fetch_array()) {
 
 //开始读取期数
 $curl = new Curl_HTTP_Client();
+
 $curl->set_referrer("http://www.1680180.com/lottery/10041.html");
 $curl->set_user_agent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.3.4000 Chrome/30.0.1599.101");
 $html_data = $curl->fetch_url("http://www.1680180.com/Open/CurrentOpen?code=10041");

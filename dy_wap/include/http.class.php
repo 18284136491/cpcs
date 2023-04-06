@@ -161,7 +161,7 @@ class Curl_HTTP_Client
 	var $debug = true;
 	var $error_msg;
 	var $error_no="";
-	function Curl_HTTP_Client($debug = false)
+	function __construct($debug = false)
 	{
 		$this->debug = $debug;
 		$this->init();

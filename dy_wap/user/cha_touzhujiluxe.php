@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/function.php");
 include_once("../include/config.php");
 
@@ -138,7 +138,7 @@ if($gid == ''){
 							}
 							?>
 						 <span style="color:#005481"><b><?=$myrows["match_name"]?></b></span><br />
-                         <?
+                         <?php
 						    //正则匹配
                          	$m_count=count($m);
 							preg_match('[\((.*)\)]', $m[$m_count-1], $matches);
@@ -152,7 +152,7 @@ if($gid == ''){
                 <font style="color:#000000"><?=$team[1]?></font> <?=str_replace(array("主让","客让"),array("",""),$m[1])?> <font style="color:#890209"><?=$team[0]?></font>(主)     <? }else{ //主让?>
                  <font style="color:#000000"><?=$team[0]?></font> <?=str_replace(array("主让","客让"),array("",""),$m[1])?> <font style="color:#890209"><?=$team[1]?></font>
                           <? }?>
-                         <?
+                         <?php
 						 $m[1]="";
 						  }else{ ?>
             <font style="color:#000000"><?=$team[0]?></font> <? if(isset($score)) { ?> <?=$score?> <? }else{?>VS.<? }?><font style="color:#890209"><?=$team[1]?></font>
@@ -181,7 +181,7 @@ if($gid == ''){
 							if($x<$nums-1){
 						?>
                         <hr style="height:1px; width:99%; color:#F60" />
-						<?
+						<?php
 							}
 						$x++;
 						}

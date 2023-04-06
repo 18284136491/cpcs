@@ -1,6 +1,6 @@
 <?php
 function double_format($double_num){
-	return $double_num>0 ? sprintf("%.2f",$double_num) : $double_num<0 ? sprintf("%.2f",$double_num) : 0;
+	return $double_num>0 ? sprintf("%.2f",$double_num) : ($double_num<0 ? sprintf("%.2f",$double_num) : 0);
 }
 
 function cutString($title,$length=38,$bool=0){ //截取字符串

@@ -1,6 +1,6 @@
 <?php
 unset($mysqlio);
-$mysqlio = new MySQLi("127.0.0.1","root","root","dy3_db");
+$mysqlio = new MySQLi("mysql","root","root","dy3_db");
 $mysqlio->query("set names utf8");
 
 //if (!get_magic_quotes_gpc()) {

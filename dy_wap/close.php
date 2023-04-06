@@ -1,4 +1,4 @@
-<?
+<?php
 include_once("cache/website.php");
 if($web_site['close']==0){
 //header("Location:index.php");

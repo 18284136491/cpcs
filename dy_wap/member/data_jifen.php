@@ -1,6 +1,6 @@
 <?php
 include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -93,6 +93,7 @@ $subsub = 4;
                             <td><?=sprintf("%.2f",abs($rows["m_value"]))?></td>
                             <td>
                                 <?php
+                                $sum_money = 0;
                                 if($rows["status"] == 1) {
                                     $sum_money += abs($rows["m_value"]);
                                     echo '<span class="c_red">成功</span>';

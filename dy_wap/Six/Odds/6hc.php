@@ -1,4 +1,4 @@
-<?
+<?php
 include ("../../include/mysqli.php");
 $sql="SELECT * FROM `c_odds_0` order by id";
 	$query		= $mysqli->query($sql);

@@ -1,7 +1,7 @@
 <?php
 session_start();
 //ini_set("display_errors","yes");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/config.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -107,7 +107,7 @@ if(!$bid){
 	  <td><?=$rows["bj_time"]?></td>
 	  <td><font color="#000000">HG_<?=$rows["number"]?></font><br/>
 		<?=$rows["ball_sort"]?>			
-        <?
+        <?php
         $m=explode('-',$rows["bet_info"]);
 		if($rows["ball_sort"] == "冠军" || $rows["ball_sort"] == "金融");
 		else echo $tz_type=$m[0];
@@ -125,7 +125,7 @@ if(!$bid){
       ?></td>
 	  <td>
 	  <span style="color:#005481"><b><?=$rows["match_name"]?></b></span>
-       <?
+       <?php
 		//正则匹配
         $m_count=count($m);
 		preg_match('[\((.*)\)]', $m[$m_count-1], $matches);
@@ -156,7 +156,7 @@ if(!$bid){
         <font style="color:#000000"><?=$team[0]?></font> <?=str_replace(array("主让","客让"),array("",""),$m[1])?>
         <font style="color:#890209"><?=$team[1]?></font>
         <? }?>
-        <?
+        <?php
 		$m[1]="";
 		}else{ ?>
         <font style="color:#000000"><?=$team[0]?></font> <? if(isset($score)) { ?> <?=$score?>
@@ -164,7 +164,7 @@ if(!$bid){
         <? } ?>
         <br />
 		<font style="color:#000000">
-		<?
+		<?php
       //  if($m_count==3) print_r($m);
         //半全场替换显示
 		$arraynew=array($team[0],$team[1],"和局"," / ","局");
@@ -241,7 +241,7 @@ if(!$bid){
 	  	@$win+=$jine;
 ?></td>
       </tr>
-<?
+<?php
 	unset($score);
 	}
 }

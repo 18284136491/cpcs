@@ -2,7 +2,7 @@
 session_start();
 include_once("../include/mysqli.php");
 include_once("../include/config.php");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/function.php");
 include_once("../class/user.php");
 include_once("../cache/website.php");

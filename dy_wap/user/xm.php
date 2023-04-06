@@ -1,6 +1,6 @@
 <?php
 //ini_set('display_errors','yes');
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/mysqli.php");
 include_once("../include/mysqlit.php");
 include_once("../include/config.php");

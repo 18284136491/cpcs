@@ -1,6 +1,6 @@
 <?php
-include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include_once("../include/config.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -78,7 +78,7 @@ if(self==top){
                         <td width="120">类型</td>
                         <td width="100">状态</td>
                         </tr>
-	<?
+	<?php
     $sql	=	"select m_id from `k_money` where `uid`=$uid and `type`=1 order by `m_id` desc";
 	$query	=	$mysqli->query($sql);
 	$sum	=	$mysqli->affected_rows; //总页数

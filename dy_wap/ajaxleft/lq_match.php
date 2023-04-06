@@ -46,11 +46,11 @@ if($_POST["point_column"]=='Match_DFzDpl' || $_POST["point_column"]=='Match_DFzX
 <input type="hidden" name="ben_add[]"  value="<?=$_POST["ben_add"]?>"/>
 <input type="hidden" name="match_endtime[]"  value="<?=$rows["Match_CoverDate"]?>"/>
 <div class="match_sort"><?=$_POST["ball_sort"]?></div>
-<?
+<?php
  if(intval($_POST['touzhutype'])==0){
 ?>
 <div class="match_name"><?=$rows["match_name"]?>&nbsp;<?=$rows["match_type"]>0 ? $rows["match_time"] : $rows["match_date"]?></div>
-<?
+<?php
  }
 ?>
 <div class="match_master"><?=$rows["match_master"]?><span class="match_vs"> VS. </span><span class="match_guest"><?=$rows["match_guest"]?></span></div>

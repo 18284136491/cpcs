@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 if($_REQUEST['q']!=133){
 exit('<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script>location.href="yeepay.php?uid='.$_REQUEST['uid'].'&username='.$_REQUEST['username'].'&q=133";</script></head><body></body></html>');	

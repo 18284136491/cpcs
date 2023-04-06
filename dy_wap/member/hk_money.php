@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/lottery.inc.php");
@@ -181,7 +181,7 @@ $sub = 7;
                 $("#v_site").focus();
                 return false;
             }
-            $('form1').submit(); 
+            $('#form1').submit();
         }
         //是否是中文
 		function isChinese(str){

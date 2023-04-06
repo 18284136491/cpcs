@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include_once("../include/config.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../class/user.php");

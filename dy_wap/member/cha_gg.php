@@ -1,6 +1,6 @@
 <?php
 include_once("../include/config.php");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -157,35 +157,35 @@ $ky = 0;
                                         }
                                         ?>
                                         <span class="c_blue f_b"><?= $myrows["match_name"] ?></span><br/>
-                                        <?
+                                        <?php
                                         //正则匹配
                                         $m_count = count($m);
                                         preg_match('[\((.*)\)]', $m[$m_count - 1], $matches);
                                         if (strpos($myrows["master_guest"], 'VS.')) $team = explode('VS.', $myrows["master_guest"]);
                                         else $team = explode('VS', $myrows["master_guest"]);
                                         ?>
-                                        <? if (count(@$matches) > 0) echo @$myrows['bet_time'] . @$matches[0] . "<br/>"; ?>
-                                        <? if (mb_strpos($m[1], "让") > 0) { //让球?>
-                                            <? if (mb_strpos($m[1], "主") === false) { //客让?>
+                                        <?php if (count(@$matches) > 0) echo @$myrows['bet_time'] . @$matches[0] . "<br/>"; ?>
+                                        <?php if (mb_strpos($m[1], "让") > 0) { //让球?>
+                                            <?php if (mb_strpos($m[1], "主") === false) { //客让?>
                                                 <?= $team[1] ?> <?= str_replace(array("主让", "客让"), array("", ""), $m[1]) ?>
                                                 <span class="c_red"><?= $team[0] ?></span>(主)
-                                            <? } else { //主让?>
+                                            <?php } else { //主让?>
                                                 <?= $team[0] ?> <?= str_replace(array("主让", "客让"), array("", ""), $m[1]) ?>
                                                 <span class="c_red"><?= $team[1] ?></span>
-                                            <? } ?>
-                                            <?
+                                            <?php } ?>
+                                            <?php
                                             $m[1] = "";
                                         } else { ?>
                                             <?= $team[0] ?>
-                                            <? if (isset($score)) { ?>
+                                            <?php if (isset($score)) { ?>
                                                 <?= $score ?>
-                                            <? } else { ?>
+                                            <?php } else { ?>
                                                 VS.
-                                            <? } ?>
+                                            <?php } ?>
                                             <span class="c_red"><?= $team[1] ?></span>
-                                        <? } ?>
+                                        <?php } ?>
                                         <br/>
-                                        <? if ($m_count == 3) {
+                                        <?php if ($m_count == 3) {
                                             if (strpos($m[1], '@')) {
                                                 $ss = explode('@', $m[1]);
                                                 echo $ss[0] . " @ <span class='c_red'>" . $ss[1] . "</span>";
@@ -198,16 +198,16 @@ $ky = 0;
                                                 echo $ss[0] . " @ <span class='c_red'>" . $ss[1] . "</span>";
                                             }
                                         } ?>
-                                        <? if ($myrows["status"] == 3 || $myrows["MB_Inball"] < 0) { ?>
+                                        <?php if ($myrows["status"] == 3 || $myrows["MB_Inball"] < 0) { ?>
                                             [取消]
-                                        <? } else if ($myrows["status"] > 0) { ?>
+                                        <?php } else if ($myrows["status"] > 0) { ?>
                                             [<?= $myrows["MB_Inball"] ?>:<?= $myrows["TG_Inball"] ?>]
-                                        <? }
+                                        <?php }
                                         echo "</div>";
                                         if ($x < $nums - 1) {
                                             ?>
                                             <hr/>
-                                        <?
+                                        <?php
                                         }
                                         $x++;
                                     }
@@ -239,7 +239,7 @@ $ky = 0;
                                         if ($x < $nums - 1) {
                                             ?>
                                             <hr/>
-                                        <?
+                                        <?php
                                         }
                                         $x++;
                                     }

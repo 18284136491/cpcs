@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 
 function getstatus($status,$time=1){ 
 	$str	=	'<span style="color:#0000FF;">未处理</span>';

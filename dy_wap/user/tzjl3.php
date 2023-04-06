@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/mysqli.php");
 include_once("../include/config.php");
 include_once("../common/function.php");
@@ -90,7 +90,7 @@ $rows	=	$query->fetch_array();
 	  <td><font color="#000000">XB_<?=$rows["number"]?></font>
       	<br/>
 		<?=$rows["ball_sort"]?>			
-        <?
+        <?php
         $m=explode('-',$rows["bet_info"]);
 		if($rows["ball_sort"] == "冠军" || $rows["ball_sort"] == "金融");
 		else echo $tz_type=$m[0];
@@ -109,7 +109,7 @@ $rows	=	$query->fetch_array();
 	  <td>
 	  <span style="color:#005481"><b><?=$rows["match_name"]?></b></span>
 
-       <?
+       <?php
 		//正则匹配
         $m_count=count($m);
 		preg_match('[\((.*)\)]', $m[$m_count-1], $matches);
@@ -137,7 +137,7 @@ $rows	=	$query->fetch_array();
         <font style="color:#000000"><?=$team[0]?></font> <?=str_replace(array("主让","客让"),array("",""),$m[1])?>
         <font style="color:#890209"><?=$team[1]?></font>
         <? }?>
-        <?
+        <?php
 		$m[1]="";
 		}else{ ?>
         <font style="color:#000000"><?=$team[0]?></font> <? if(isset($score)) { ?> <?=$score?>
@@ -146,7 +146,7 @@ $rows	=	$query->fetch_array();
         
         <br />
 		<font style="color:#000000">
-		<?
+		<?php
       //  if($m_count==3) print_r($m);
         //半全场替换显示
 		$arraynew=array($team[0],$team[1],"和局"," / ","局");
@@ -199,7 +199,7 @@ $rows	=	$query->fetch_array();
 	  echo double_format($jine);
 	?></td>
       </tr>
-    <?
+    <?php
 		unset($score);
 		}while($rows = $query->fetch_array());
 	}

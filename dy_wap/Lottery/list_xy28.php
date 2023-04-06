@@ -3,7 +3,7 @@ session_start();
 include_once("../include/mysqli.php");
 include_once("../include/config.php");
 include_once("../include/pager.class.php");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/lottery.inc.php");
 include("include/auto_class5.php");
 include ("include/order_info.php");

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 ?>
 <!DOCTYPE HTML>
 <html><head>

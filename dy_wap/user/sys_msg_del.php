@@ -1,5 +1,5 @@
 ﻿<?php
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/mysqli.php");
 
 $msg_id = intval($_GET["id"]);

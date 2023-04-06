@@ -2,7 +2,7 @@
 session_start();
 include_once("../include/mysqli.php");
 include_once("../include/config.php");
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../common/function.php");
 include_once("../class/user.php");
 include_once("../cache/website.php");
@@ -349,7 +349,7 @@ $t_day = date('Y-m-d', $lottery_time);
                                     </li>
                                 </ul>
                             </div>
-                        <? } ?>
+                        <?php } ?>
                     <?php } elseif($type == '第一球' || $type == '第二球' || $type == '第三球' || $type == '第四球' || $type == '第五球') { ?>
                         <div class="tz_box ssc">
                             <div class="tit"><?=$type?></div>

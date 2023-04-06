@@ -1,6 +1,6 @@
 <?php
-include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include_once("../include/config.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -223,7 +223,7 @@ if(!$id){
 						      	<?php } ?>
 						      
 						      </td>
-                              <td ><?
+                              <td ><?php
 	  if($rows["status"]==0){
 	  	echo '未知';
 	  }else{
@@ -236,7 +236,7 @@ if(!$id){
 	 
 	?></td>
 						      </tr>
-    <?
+    <?php
 		unset($score);
 		}
 	}

@@ -49,7 +49,7 @@ if(count($temp_array)>2){
 <input type="hidden" name="Match_HRedCard[]"  value="<?=$rows["Match_HRedCard"]?>"/>
 <input type="hidden" name="Match_GRedCard[]"  value="<?=$rows["Match_GRedCard"]?>"/>
 <input type="hidden" name="is_lose"  value="<?=$_POST["is_lose"]?>"/>
-<?
+<?php
  if(intval($_POST['touzhutype'])==1){
 ?>
 <div class="match_sort"><?=$_POST["ball_sort"]?></div>
@@ -59,7 +59,7 @@ if(count($temp_array)>2){
 	<span style="color:#D90000;"><?=double_format($rows[$_POST["point_column"]])?></span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/x.gif" alt="取消赛事" width="8" height="8" border="0" onclick="javascript:del_bet(this)" style="cursor:pointer;" />
 
 </div>
-<?
+<?php
  }else{
 ?>
 <div class="match_sort"><?=$_POST["ball_sort"]?></div>
@@ -85,7 +85,7 @@ if($temp_array[0]=="让球" || $temp_array[0]=="上半场让球"){ //让球
 	<span style="color:#D90000;"><?=double_format($rows[$_POST["point_column"]])?></span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/x.gif" alt="取消赛事" width="8" height="8" border="0" onclick="javascript:del_bet(this)" style="cursor:pointer;" />
 	</div>
 </div>
-<?
+<?php
  }
 ?>
 <?php

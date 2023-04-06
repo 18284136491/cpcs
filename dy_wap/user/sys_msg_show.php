@@ -1,5 +1,5 @@
 <?php
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/mysqli.php");
 
 $sql	=	"update k_user_msg set islook=1 where uid='".$_SESSION["uid"]."' and msg_id='".$_GET["id"]."'";

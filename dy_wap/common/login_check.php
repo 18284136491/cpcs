@@ -1,6 +1,7 @@
 <?php
 session_start();
 header('Content-type: text/html; charset=utf-8');
+
 if(!isset($_SESSION["uid"]) || !isset($_SESSION["username"])) {
     echo "<script>alert('请先登录！'); window.open('/login.php', '_top');</script>";
     exit();

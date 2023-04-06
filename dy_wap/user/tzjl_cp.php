@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
 include_once("../include/config.php");
@@ -111,7 +111,7 @@ if(self==top){
 		  echo double_format($rows["win"]+$rows["fs"]);
 	?></td>
 						      </tr>
-						    <?
+						    <?php
 		unset($score);
 		}
 	}

@@ -1,6 +1,6 @@
 <?php
-include_once("../include/config.php"); 
-include_once("../common/login_check.php");
+include_once("../include/config.php");
+include("../common/login_check.php");
 include_once("../common/logintu.php");
 include_once("../include/mysqli.php");
 include_once("../include/newpage.php");
@@ -221,7 +221,7 @@ if(self==top){
 				if($x<$nums-1){
 			?>
 			<hr style="height:1px; width:99%; color:#ccc" />
-			<?
+			<?php
 				}
 			$x++;
 			}

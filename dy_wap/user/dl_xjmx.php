@@ -1,5 +1,5 @@
 <?php
-include_once("../common/login_check.php");
+include("../common/login_check.php");
 
 function sum($num){
 	return $num=='' ? 0 : $num;
